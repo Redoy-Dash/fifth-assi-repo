@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daily UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- ********************Header******************** -->
+    <div class="container lg:max-w-7xl md:max-w-4xl sm:max-w-[500px] mx-auto mt-5 sticky">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a href="index.html"
+                    class="bg-green-500 text-white py-2 px-5 rounded hover:bg-green-600 font-bold">Home</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <img src="assets/logo.png" alt="logo">&nbsp;&nbsp;<h1 class="text-4xl font-bold h-full items-center">
+                    Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end">
+                <div class="text-xl font-semibold"><img src="assets/coin.png" alt="" class="inline-block">&nbsp;<span
+                        id="mainBalance">5500</span>&nbsp;BDT</div>
+            </div>
+        </div>
+    </div>
+    <!-- ***************Header End*************** -->
+
+    <!-- ********************Main******************** -->
+    <main>
+        <!-- ****************Banner**************** -->
+        <div
+            class="container lg:max-w-7xl md:max-w-4xl sm:max-w-[500px] mx-auto h-[150px] text-center content-center sticky">
+            <div class="banner ">
+                <button
+                    class="bg-green-500 text-white py-3 px-7 font-bold rounded hover:bg-slate-300 hover:text-green-500 hover:border-green-500 hover:border"><a
+                        href="index.html">Donation</a></button>
+                <button
+                    class="bg-white text-black font-bold py-3 px-9 rounded border border-green-500 hover:bg-slate-300 hover:text-green-500 hover:border-green-500 "><a
+                        href="history.html">History</a></button>
+            </div>
+        </div>
+        <!-- ****************Banner End**************** -->
+        <!-- Accordion Section -->
+        <div class="container lg:max-w-7xl md:max-w-4xl sm:max-w-[500px] mx-auto mt-[70px]">
+            <div class="join join-vertical w-full border border-green-500">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p>DOM (Document Object Model) হচ্ছে একটি ওয়েব পেজের স্ট্রাকচারাল উপস্থাপনা। যেখানে HTML এলিমেন্টগুলোকে জামস্ক্রিপ্ট দ্বারা ম্যানুপুলেট করা হয়</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Accordion Section End -->
+    </main>
+    <!-- ****************Main End**************** -->
+
+
+    <!-- JavaScript -->
+    <script src="JS/main.js"></script>
+
+</body>
+
+</html>

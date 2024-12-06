@@ -33,15 +33,16 @@
 
     <!-- ********************Main******************** -->
     <main>
+        <!-- ****************Banner**************** -->
         <div
             class="container lg:max-w-7xl md:max-w-4xl sm:max-w-[500px] mx-auto h-[150px] text-center content-center sticky">
             <div class="banner ">
                 <button
                     class="bg-green-500 text-white py-3 px-7 font-bold rounded hover:bg-slate-300 hover:text-green-500 hover:border-green-500 hover:border"><a
-                        href="index.html">Donation</a></button>
-                <button
-                    class="bg-white text-black font-bold py-3 px-9 rounded border border-green-500 hover:bg-slate-300 hover:text-green-500 hover:border-green-500 "><a
-                        href="history.html">History</a></button>
+                        href="#">Donation</a></button>
+                <button onclick="location.href='history.html'"
+                    class="bg-white text-black font-bold py-3 px-9 rounded border border-green-500 hover:bg-slate-300 hover:text-green-500 hover:border-green-500">History</button>
+
             </div>
         </div>
         <!-- ****************Banner End**************** -->
@@ -66,7 +67,7 @@
                         supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <input class="border rounded w-full p-2 mb-5 mt-9" id="donationInput1" type="text"
                         placeholder="Write Donation Amount"><br>
-                    <button onclick="handleDonation('donationInput1', 'donationBalance1')"
+                    <button onclick="handleDonation('donationInput1', 'donationBalance1', 'Noakhali')"
                         class="bg-green-500 text-white py-2 mt-3 w-full font-bold rounded hover:bg-green-600">Donate
                         Now</button>
                 </div>
@@ -93,7 +94,7 @@
                         those in urgent need.</p>
                     <input class="border rounded w-full p-2 mb-5 mt-9" id="donationInput2" type="text"
                         placeholder="Write Donation Amount"><br>
-                    <button onclick="handleDonation('donationInput2', 'donationBalance2')"
+                    <button onclick="handleDonation('donationInput2', 'donationBalance2', 'Feni')"
                         class="bg-green-500 text-white py-2 mt-3 w-full font-bold rounded hover:bg-green-600">Donate
                         Now</button>
                 </div>
@@ -122,7 +123,7 @@
                         need.</p>
                     <input class="border rounded w-full p-2 mb-5 mt-9" id="donationInput3" type="text"
                         placeholder="Write Donation Amount"><br>
-                    <button onclick="handleDonation('donationInput3', 'donationBalance3'), showModal()"
+                    <button onclick="handleDonation('donationInput3', 'donationBalance3', 'Quota Movement')"
                         class="bg-green-500 text-white py-2 mt-3 w-full font-bold rounded hover:bg-green-600">Donate
                         Now</button>
                 </div>
@@ -135,7 +136,8 @@
             <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
                 <h2 class="text-2xl font-bold text-center text-green-500">Thank You!</h2>
                 <p class="text-lg text-gray-700 text-center mt-3">
-                    Your donation has been successfully processed.
+                    Your <span id="modalAmount">00</span>&nbsp;<span>BDT</span> donation has been successfully
+                    processed.
                 </p>
                 <button onclick="closeModal()"
                     class="mt-5 w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 rounded">
