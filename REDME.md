@@ -1,0 +1,1 @@
+Responsive For 667px Device.
