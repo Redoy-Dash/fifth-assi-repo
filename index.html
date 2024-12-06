@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daily UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container lg:max-w-7xl md:max-w-4xl sm:max-w-[500px]   mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a href="blog.html" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Blog</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <h1 class="text-4xl font-bold">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end">
+                <div class="text-xl font-semibold"><img src="assets/coin.png" alt="" class="inline-block">&nbsp;<span id="mainBalance">5500 BDT</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    <div class="bg-gray-100 min-h-screen p-4">
+        <div class="max-w-4xl mx-auto bg-white shadow rounded-lg p-6">
+            <header class="flex justify-between items-center mb-6">
+                <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+
+            </header>
+
+            <div>
+                <!-- Card for Donations -->
+                <div class="border rounded-lg p-4 mb-4">
+                    <div class="flex gap-4">
+                        <img src="assets/noakhali.png" alt="Flood Image" class="w-36 h-24 object-cover rounded-md" />
+                        <div class="flex-1">
+                            <h2 class="text-lg font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                            <p class="text-sm text-gray-600 mb-3">
+                                The recent floods in Noakhali have caused significant damage...
+                            </p>
+                            <input type="number" id="donationInput1" class="border rounded w-full p-2 mb-3"
+                                placeholder="Write Donation Amount" min="0" />
+                            <button onclick="handleDonation( 'donationInput1', 'donationBalance1')"
+                                class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+                                Donate Now
+                            </button>
+                        </div>
+                    </div>
+                    <p class="mt-2 text-right text-sm font-bold">Total Donation: <span id="donationBalance1">0</span>
+                        BDT</p>
+                </div>
+
+                <!-- Repeat the same structure for other donations -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="JS/main.js"></script>
+
+</body>
+
+</html>
