@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth bg-green-100">
 
 <head>
     <meta charset="UTF-8">
@@ -13,28 +13,29 @@
 
 <body>
     <!-- ********************Header******************** -->
-    <div class="container lg:max-w-7xl md:max-w-4xl sm:max-w-[500px] mx-auto mt-5 sticky">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <a href="blog.html"
-                    class="bg-green-500 text-white py-2 px-5 rounded hover:bg-green-600 font-bold">Blog</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <img src="assets/logo.png" alt="logo">&nbsp;&nbsp;<h1 class="text-4xl font-bold h-full items-center">
-                    Donate Bangladesh</h1>
-            </div>
-            <div class="navbar-end">
-                <div class="text-xl font-semibold"><img src="assets/coin.png" alt="" class="inline-block">&nbsp;<span
-                        id="mainBalance">10000</span>&nbsp;BDT</div>
+    <header class="sticky top-0 z-50 bg-green-100 shadow-xl shadow-green-500/50">
+        <!-- ***************Navbar*************** -->
+        <div class="container lg:max-w-[1140px] md:max-w-[992px] sm:max-w-[575px] mx-auto mt-5">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <a href="blog.html"
+                        class="bg-green-500 text-white py-2 px-5 rounded hover:bg-green-600 font-bold">Blog</a>
+                </div>
+                <div class="navbar-center lg:flex">
+                    <img class="w-[30px] md:w-[50px] lg:w-[60px]" src="assets/logo.png" alt="logo">&nbsp;&nbsp;<h1
+                        class="text-xl lg:text-4xl md:text-3xl font-bold h-full items-center">
+                        Donate Bangladesh</h1>
+                </div>
+                <div class="navbar-end">
+                    <div class="text-xl font-semibold"><img src="assets/coin.png" alt=""
+                            class="inline-block">&nbsp;<span id="mainBalance">10000</span>&nbsp;BDT</div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- ***************Header End*************** -->
-    <!-- Main Content -->
-    <main>
+        <!-- ***************Navbar End*************** -->
         <!-- ****************Banner**************** -->
         <div
-            class="container lg:max-w-7xl md:max-w-4xl sm:max-w-[500px] mx-auto h-[150px] text-center content-center sticky">
+            class="container lg:max-w-[1140px] md:max-w-[992px] sm:max-w-[575px] mx-auto h-[150px] text-center content-center">
             <div class="banner ">
                 <button
                     class="bg-white text-black font-bold py-3 px-7 rounded border border-green-500 hover:bg-slate-300 hover:text-green-500 hover:border-green-500 "><a
@@ -47,15 +48,20 @@
             </div>
         </div>
         <!-- ****************Banner End**************** -->
+    </header>
+    <!-- ***************Header End*************** -->
+
+    <!-- Main Content -->
+    <main>
         <div class="container lg:max-w-7xl md:max-w-4xl sm:max-w-[500px] mx-auto mt-[50px]">
             <h2 class="text-2xl font-bold mb-5 text-center">Your Donation History</h2>
             <div class="overflow-x-auto">
                 <table class="table-auto border-collapse border border-gray-400 w-full mt-5">
                     <thead>
                         <tr>
-                            <th class="border px-4 py-2">Cause</th>
-                            <th class="border px-4 py-2">Amount</th>
-                            <th class="border px-4 py-2">Date and Time</th>
+                            <th class="border border-green-500 px-4 py-2">Cause</th>
+                            <th class="border border-green-500 px-4 py-2">Amount</th>
+                            <th class="border border-green-500 px-4 py-2">Date and Time</th>
                         </tr>
                     </thead>
                     <tbody id="transactionTable">

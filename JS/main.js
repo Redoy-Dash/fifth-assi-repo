@@ -75,15 +75,15 @@ function loadTransactionHistory() {
         const row = document.createElement("tr");
 
         const causeCell = document.createElement("td");
-        causeCell.className = "border px-4 py-2";
+        causeCell.className = "border border-green-500 px-4 py-2";
         causeCell.textContent = transaction.cause;
 
         const amountCell = document.createElement("td");
-        amountCell.className = "border px-4 py-2";
+        amountCell.className = "border border-green-500 px-4 py-2";
         amountCell.textContent = `${transaction.amount} BDT`;
 
         const timeCell = document.createElement("td");
-        timeCell.className = "border px-4 py-2";
+        timeCell.className = "border border-green-500 px-4 py-2";
         timeCell.textContent = transaction.date;
 
 
