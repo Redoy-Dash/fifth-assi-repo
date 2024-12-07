@@ -16,8 +16,8 @@
     <div class="container lg:max-w-7xl md:max-w-4xl sm:max-w-[500px] mx-auto mt-5 sticky">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-                <a href="index.html"
-                    class="bg-green-500 text-white py-2 px-5 rounded hover:bg-green-600 font-bold">Home</a>
+                <a href="blog.html"
+                    class="bg-green-500 text-white py-2 px-5 rounded hover:bg-green-600 font-bold">Blog</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <img src="assets/logo.png" alt="logo">&nbsp;&nbsp;<h1 class="text-4xl font-bold h-full items-center">
@@ -25,13 +25,12 @@
             </div>
             <div class="navbar-end">
                 <div class="text-xl font-semibold"><img src="assets/coin.png" alt="" class="inline-block">&nbsp;<span
-                        id="mainBalance">5500</span>&nbsp;BDT</div>
+                        id="mainBalance">10000</span>&nbsp;BDT</div>
             </div>
         </div>
     </div>
     <!-- ***************Header End*************** -->
-
-    <!-- ********************Main******************** -->
+    <!-- Main Content -->
     <main>
         <!-- ****************Banner**************** -->
         <div
@@ -48,16 +47,26 @@
             </div>
         </div>
         <!-- ****************Banner End**************** -->
-        <!-- History Section -->
+        <div class="container lg:max-w-7xl md:max-w-4xl sm:max-w-[500px] mx-auto mt-[50px]">
+            <h2 class="text-2xl font-bold mb-5 text-center">Your Donation History</h2>
+            <div class="overflow-x-auto">
+                <table class="table-auto border-collapse border border-gray-400 w-full mt-5">
+                    <thead>
+                        <tr>
+                            <th class="border px-4 py-2">Cause</th>
+                            <th class="border px-4 py-2">Amount</th>
+                            <th class="border px-4 py-2">Date and Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionTable">
+                        <!-- Transaction rows added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-        <!-- History Section End -->
-    </main>
-    <!-- ****************Main End**************** -->
-
-
-    <!-- JavaScript -->
-    <script src="JS/main.js"></script>
-
+        <!-- JavaScript -->
+        <script src="JS/main.js"></script>
 </body>
 
 </html>
